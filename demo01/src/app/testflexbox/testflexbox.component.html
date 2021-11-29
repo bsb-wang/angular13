@@ -1,0 +1,86 @@
+<!-- <p>testflexbox works!</p> -->
+<!-- page-wrap test -->
+<div class="page-nowrap" style="background-color:white;">
+    <div class="row fixed" style="background-color: yellow;">
+        <div class="col" style="border:1px red solid;">
+            <span>I am a search condition1.</span>
+        </div>
+        <div class="col" style="border:1px red solid;">
+            <span>I am a search condition2.</span>
+        </div>
+        <div class="col" style="border:1px red solid;">
+            <div class="wrap-box">
+                <label for="example1">example1</label>
+                <input type="text" id="example1" value="" />
+            </div>
+        </div>
+        <div class="col" style="border:1px red solid;">
+            <input type="text" id="example2" value="" />
+            <input type="text" id="example3" value="" />
+        </div>
+    </div>
+    <div class="row fixed" style="background-color: yellow;">
+        <div class="btnColLeft" style="width:50%;">
+            <button>btn1</button>
+            <button>btn2</button>
+        </div>
+        <div class="btnCol" style="width:50%;">
+            <button>btn3</button>
+            <button>btn4</button>
+        </div>
+    </div>
+    <div class="row full" style="background-color: gray;">
+        <div style="height:100%">
+            <wj-flex-grid #flexgrid [itemsSource]="data">
+                <wj-flex-grid-column [header]="'Country'" [binding]="'country'" [width]="'*'"></wj-flex-grid-column>
+                <wj-flex-grid-column [header]="'Date'" [binding]="'date'"></wj-flex-grid-column>
+                <wj-flex-grid-column [header]="'Revenue'" [binding]="'amount'" [format]="'n0'"></wj-flex-grid-column>
+                <wj-flex-grid-column [header]="'Active'" [binding]="'active'"></wj-flex-grid-column>
+            </wj-flex-grid>
+        </div>
+    </div>
+    <div class="row fixed" style="height:40px; background-color: blue;">
+        I am a fixed div too.
+    </div>
+</div>
+
+
+<!-- <div class="container row c-strench">
+    <div class="one">
+        <p>one</p>
+    </div>
+    <div class="two">
+        <p>two</p>
+        <p>two</p>
+    </div>
+    <div class="three">
+        <p>three</p>
+        <p>three</p>
+        <p>three</p>
+    </div>
+</div>
+<div class="continer">
+    <div class="row">
+        <div class="col">
+            <label for="txtInput">please input</label>
+            <input id="txtInput" type="text" value="input text"/>
+        </div>
+        <div class="col">
+            <label for="txtInput2">please input</label>
+            <input id="txtInput2" type="text" value="input text2"/><br>
+            <label for="txtInput3">please input</label>
+            <input id="txtInput3" type="text" value="input text3"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col left" style="width:50%">
+            <button value="btn1">btn1</button>
+            <button value="btn2">btn2</button>
+        </div>
+        <div class="col right" style="width:50%"> 
+            <button value="btn3">btn3</button>
+            <button value="btn4">btn4</button>
+        </div>
+    </div>
+</div>
+-->
